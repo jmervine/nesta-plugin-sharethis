@@ -92,21 +92,17 @@ until a gem has been pushed to rubygems.org.</p></blockquote>
 <ol>
 <li><p>Add share this configs.</p>
 
-<p> # file: config/config.yml
- sharethis: SHARETHIS_PARTENT_ID</p>
+<pre class="code ruby"><code> # file: config/config.yml
+ sharethis: SHARETHIS_PARTENT_ID
 
-<p> sharethis_buttons: # optional</p>
-
-<ul>
-<li>:twitter</li>
-<li>:linkedin</li>
-<li>:reddit</li>
-<li>:digg</li>
-<li>:facebook_like
-
-<h1>the aboce are the defaults</h1></li>
-</ul>
-</li>
+ sharethis_buttons: # optional
+ - :twitter
+ - :linkedin
+ - :reddit
+ - :digg
+ - :facebook_like
+ # the aboce are the defaults
+</code></pre></li>
 </ol>
 
 
@@ -120,29 +116,29 @@ until a gem has been pushed to rubygems.org.</p></blockquote>
 <ol>
 <li><p>Add the 'sharethis_javascript' helper to your your layout.haml:</p>
 
-<p> -#- file: views/layout.haml
- &lt;!DOCTYPE html>
-  %html(lang="en")
-   %head</p>
+<pre class="code ruby"><code> -#- file: views/layout.haml
+ &lt;!DOCTYPE html&gt;
+  %html(lang=&quot;en&quot;)
+   %head
+     %meta(charset=&quot;utf-8&quot;)
+     - if @description
+       %meta(name=&quot;description&quot; content=@description)
+     - if @keywords
+       %meta(name=&quot;keywords&quot; content=@keywords)
+     = sharethis_javascript
+     %title= @title
 
-<pre class="code ruby"><code> %meta(charset=&quot;utf-8&quot;)
- - if @description
-   %meta(name=&quot;description&quot; content=@description)
- - if @keywords
-   %meta(name=&quot;keywords&quot; content=@keywords)
- = sharethis_javascript
- %title= @title
-</code></pre>
-
-<p> -#- ... rest of layout.haml ...</p></li>
+ -#- ... rest of layout.haml ...
+</code></pre></li>
 <li><p>Add the 'sharethis_buttons' helper to your layout, where you want
 your buttons to appear.</p>
 
-<p> -#- file: views/layout.haml</p>
+<pre class="code ruby"><code> -#- file: views/layout.haml
 
-<p> -#- ... rest of layout.haml ...
+ -#- ... rest of layout.haml ...
  = sharethis_buttons
- -#- ... rest of layout.haml ...</p></li>
+ -#- ... rest of layout.haml ...
+</code></pre></li>
 </ol>
 
 
@@ -159,7 +155,7 @@ your buttons to appear.</p>
 </div></div>
 
     <div id="footer">
-  Generated on Thu Aug 23 03:14:05 2012 by
+  Generated on Thu Aug 23 03:16:07 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.3).
 </div>

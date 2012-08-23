@@ -26,16 +26,16 @@ Or install it yourself as:
 
 1. Add share this configs.
 
-    # file: config/config.yml
-    sharethis: SHARETHIS_PARTENT_ID
+        # file: config/config.yml
+        sharethis: SHARETHIS_PARTENT_ID
 
-    sharethis_buttons: # optional
-    - :twitter
-    - :linkedin
-    - :reddit
-    - :digg
-    - :facebook_like
-    # the aboce are the defaults
+        sharethis_buttons: # optional
+        - :twitter
+        - :linkedin
+        - :reddit
+        - :digg
+        - :facebook_like
+        # the aboce are the defaults
 
 > IMPORTANT: Notice the above sharethis_buttons are all Symbols
 > -- meaning, they start with a colon (:) -- which is required.
@@ -47,29 +47,29 @@ Or install it yourself as:
 
 2. Add the 'sharethis_javascript' helper to your your layout.haml:
 
-    -#- file: views/layout.haml
-    <!DOCTYPE html>
-     %html(lang="en")
-      %head
-        %meta(charset="utf-8")
-        - if @description
-          %meta(name="description" content=@description)
-        - if @keywords
-          %meta(name="keywords" content=@keywords)
-        = sharethis_javascript
-        %title= @title
+        -#- file: views/layout.haml
+        <!DOCTYPE html>
+         %html(lang="en")
+          %head
+            %meta(charset="utf-8")
+            - if @description
+              %meta(name="description" content=@description)
+            - if @keywords
+              %meta(name="keywords" content=@keywords)
+            = sharethis_javascript
+            %title= @title
 
-    -#- ... rest of layout.haml ...
+        -#- ... rest of layout.haml ...
 
 
 3. Add the 'sharethis_buttons' helper to your layout, where you want
    your buttons to appear.
 
-    -#- file: views/layout.haml
-    
-    -#- ... rest of layout.haml ...
-    = sharethis_buttons
-    -#- ... rest of layout.haml ...
+        -#- file: views/layout.haml
+
+        -#- ... rest of layout.haml ...
+        = sharethis_buttons
+        -#- ... rest of layout.haml ...
 
 
 ## Contributing
