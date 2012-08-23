@@ -57,7 +57,7 @@ module Nesta
         facebook_like
       ]
     end
-    protected_class_method :default_buttons
+    private_class_method :default_buttons
   end
 end
 
