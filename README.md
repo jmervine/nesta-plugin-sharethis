@@ -4,6 +4,21 @@
 
 Add ShareThis to NestaCMS.
 
+#### Currently supported:
+
+- delicious
+- digg
+- dzone
+- email
+- facebook
+- facebook_like
+- google
+- google_reader
+- linkedin
+- reddit
+- tumblr
+- twitter
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -69,6 +84,8 @@ Or install it yourself as:
 
 > If you're using a theme like postal3, which already has share 
 > functionality, simply replace it's buttons with the helper above.
+
+
 
 ## Overrides
 
