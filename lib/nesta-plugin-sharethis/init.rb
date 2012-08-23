@@ -43,7 +43,7 @@ module Nesta
   end
 
   class Config
-    @settings =+ %w[ sharethis sharethis_buttons ]
+    @settings += %w[ sharethis sharethis_buttons ]
 
     def sharethis_buttons
       from_yaml("sharethis_buttons") || default_buttons
