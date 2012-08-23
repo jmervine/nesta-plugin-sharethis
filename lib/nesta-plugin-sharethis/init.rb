@@ -35,7 +35,6 @@ module Nesta
 
         def sharethis_buttons
           buttons = []
-          STDOUT.puts Nesta::Config.sharethis_buttons.inspect
           Nesta::Config.sharethis_buttons.each do |button|
             buttons << Nesta::Plugin::Sharethis::BUTTONS[button]
           end
