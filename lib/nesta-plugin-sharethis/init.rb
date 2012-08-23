@@ -45,12 +45,11 @@ module Nesta
   class Config
     @settings += %w[ sharethis sharethis_buttons ]
 
-    def sharethis_buttons
+    def self.sharethis_buttons
       from_yaml("sharethis_buttons") || default_buttons
     end
 
-    protected
-    def default_buttons
+    def self.default_buttons
       %w[
         twitter
         linkedin
@@ -58,6 +57,7 @@ module Nesta
         facebook_like
       ]
     end
+    protected_class_method :default_buttons
   end
 end
 
