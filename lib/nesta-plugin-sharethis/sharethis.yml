@@ -15,6 +15,5 @@ google:        "<span class='st_google'></span>"
 google_reader: "<span class='st_google_reader'></span>"
 linkedin:      "<span class='st_linkedin'></span>"
 reddit:        "<span class='st_reddit'></span>"
-tumblr:        "<span class='st_twitter'></span>" 
-twitter:       "<span class='st_tumblr'></span>"
-
+tumblr:        "<span class='st_tumblr'></span>"
+twitter:       "<span class='st_twitter'></span>" 
