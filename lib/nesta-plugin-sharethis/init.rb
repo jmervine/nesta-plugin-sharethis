@@ -20,7 +20,7 @@ module Nesta
       end
 
       # Load yaml file with share this mappings.
-      SHARETHIS = YAML.load_file( File.expand_path( "sharethis.yml", File.dirname(__FILE)) )
+      SHARETHIS = YAML.load_file( File.expand_path( "sharethis.yml", File.dirname(__FILE__)) )
 
       # Access button mappings.
       #
