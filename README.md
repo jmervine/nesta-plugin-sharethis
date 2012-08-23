@@ -1,5 +1,7 @@
 # Nesta::Plugin::Sharethis
 
+### [Documentation](http://jmervine.github.com/nesta-plugin-sharethis/) | [NestaCMS](http://nestacms.com/)
+
 Add ShareThis to NestaCMS.
 
 > Warning, this shouldn't be considered tested or final 
