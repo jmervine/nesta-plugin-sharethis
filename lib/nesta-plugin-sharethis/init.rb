@@ -12,18 +12,6 @@ module Nesta
         default.merge(override)
       }.call.freeze
 
-      #BUTTONS = load_sharethis_config
-
-      #def self.load_sharethis_config
-        #default   = YAML.load_file( File.expand_path( "sharethis.yml", File.dirname(__FILE__)) )
-
-        #override_file = File.expand_path( "config/sharethis.yml", Nesta::Env.root )
-        #override  = ( File.exists?(override_file) ? YAML.load_file(override_file) : {} )
-
-        #default.merge(override)
-      #end
-      #private_instance_method :load_sharethis_config
-
       module Helpers
         def sharethis_javascript
           %{
