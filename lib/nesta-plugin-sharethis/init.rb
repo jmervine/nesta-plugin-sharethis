@@ -1,6 +1,9 @@
 module Nesta
   module Plugin
     module Sharethis
+      # Load yaml file with share this mappings.
+      BUTTONS = YAML.load_file( File.expand_path( "sharethis.yml", File.dirname(__FILE__)) )
+
       module Helpers
         def sharethis_javascript
           %{
@@ -13,26 +16,10 @@ module Nesta
         def sharethis_buttons
           buttons = []
           Nesta::Config.sharethis_buttons.each do |button|
-            buttons << Nesta::Plugin::Sharethis.button[button]
+            buttons << Nesta::Plugin::Sharethis::BUTTONS[button]
           end
           buttons.join("\n")
         end
-      end
-
-      # Load yaml file with share this mappings.
-      SHARETHIS = YAML.load_file( File.expand_path( "sharethis.yml", File.dirname(__FILE__)) )
-
-      # Access button mappings.
-      #
-      # @return [Struct] button mappings.
-      def self.button
-        unless @button
-          @button = Struct.new "Button", *(SHARETHIS.keys)
-          SHARETHIS.each do |key, val|
-            @button.send key, val
-          end
-        end
-        @button
       end
 
     end
