@@ -13,7 +13,7 @@ module Nesta
         def sharethis_buttons
           buttons = []
           Nesta::Config.sharethis_buttons.each do |button|
-            buttons << Nesta::Plugin::Sharethis.buttons[button]
+            buttons << Nesta::Plugin::Sharethis.button[button]
           end
           buttons.join("\n")
         end
