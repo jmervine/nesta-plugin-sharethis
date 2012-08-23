@@ -71,6 +71,8 @@ Or install it yourself as:
         = sharethis_buttons
         -#- ... rest of layout.haml ...
 
+> If you're using a theme like postal3, which already has share 
+> functionality, simply replace it's buttons with the helper above.
 
 ## Contributing
 
