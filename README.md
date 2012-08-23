@@ -38,7 +38,7 @@ Or install it yourself as:
 >
 > See lib/nesta-plugin-sharethis/sharethis.yml for a full list.
 > 
-> If you would like to add more, fork, add and submit a pull request.
+> If you would like to add more see the Overrides section below.
 
 
 2. Add the 'sharethis_javascript' helper to your your layout.haml:
