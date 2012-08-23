@@ -67,9 +67,6 @@
 
 <p>Add ShareThis to NestaCMS.</p>
 
-<blockquote><p>Warning, this shouldn't be considered tested or final
-until a gem has been pushed to rubygems.org.</p></blockquote>
-
 <h2>Installation</h2>
 
 <p>Add this line to your application's Gemfile:</p>
@@ -111,7 +108,7 @@ until a gem has been pushed to rubygems.org.</p></blockquote>
 
 <p>See lib/nesta-plugin-sharethis/sharethis.yml for a full list.</p>
 
-<p>If you would like to add more, fork, add and submit a pull request.</p></blockquote>
+<p>If you would like to add more see the Overrides section below.</p></blockquote>
 
 <ol>
 <li><p>Add the 'sharethis_javascript' helper to your your layout.haml:</p>
@@ -142,6 +139,16 @@ your buttons to appear.</p>
 </ol>
 
 
+<blockquote><p>If you're using a theme like postal3, which already has share
+functionality, simply replace it's buttons with the helper above.</p></blockquote>
+
+<h2>Overrides</h2>
+
+<p>To override defaults (see lib/nesta-plugin-sharethis/sharethis.yml)
+create a sharethis.yml file in your config directory and this plugin
+will merge it in to my defaults. Be sure to use the same format as
+my sharethis.yml.</p>
+
 <h2>Contributing</h2>
 
 <ol>
@@ -155,7 +162,7 @@ your buttons to appear.</p>
 </div></div>
 
     <div id="footer">
-  Generated on Thu Aug 23 03:16:07 2012 by
+  Generated on Thu Aug 23 14:19:38 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.3).
 </div>
