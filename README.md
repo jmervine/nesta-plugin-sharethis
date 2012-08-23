@@ -4,10 +4,6 @@
 
 Add ShareThis to NestaCMS.
 
-> Warning, this shouldn't be considered tested or final 
-> until a gem has been pushed to rubygems.org.
-
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -73,6 +69,13 @@ Or install it yourself as:
 
 > If you're using a theme like postal3, which already has share 
 > functionality, simply replace it's buttons with the helper above.
+
+## Overrides
+
+To override defaults (see lib/nesta-plugin-sharethis/sharethis.yml) 
+create a sharethis.yml file in your config directory and this plugin
+will merge it in to my defaults. Be sure to use the same format as
+my sharethis.yml.
 
 ## Contributing
 
