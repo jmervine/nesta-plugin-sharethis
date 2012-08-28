@@ -86,7 +86,6 @@ Or install it yourself as:
 > functionality, simply replace it's buttons with the helper above.
 
 
-
 ## Overrides
 
 To override defaults (see lib/nesta-plugin-sharethis/sharethis.yml) 
